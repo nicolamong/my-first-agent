@@ -3,103 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nicola - CSI | Business Intelligence & Integration Consultant</title>
-<meta name="description" content="Nicola di CSI, consulente Business Intelligence & Data Integration con oltre 35 anni di esperienza. Prenota una consulenza gratuita.">
-
+<title>Nicola - CSI Business Intelligence & Integration Consultant</title>
 <style>
-  /* ==========================================================
-     RESET & BASE
-     ========================================================== */
-  *,
-  *::before,
-  *::after {
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-
-  html {
-    -webkit-text-size-adjust: 100%;
   }
 
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     color: #1a1a1a;
-    line-height: 1.5;
     min-height: 100vh;
-  }
-
-  /* Rispetta le preferenze utente per il movimento ridotto */
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-  }
-
-  /* ==========================================================
-     LAYOUT
-     ========================================================== */
-  .page-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  header.site-header {
-    padding: 24px 24px 0;
-  }
-
-  .logo {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: #1a1a1a;
-  }
-
-  main {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px 24px;
+    padding: 24px;
   }
 
-  .content {
-    max-width: 560px;
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
     width: 100%;
-    text-align: left;
   }
 
-  /* ==========================================================
-     HEADLINE
-     ========================================================== */
-  .headline {
+  h1 {
     font-size: 32px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 16px;
-    line-height: 1.25;
+    line-height: 1.3;
   }
 
-  /* ==========================================================
-     BIO PARAGRAPH
-     ========================================================== */
   .bio {
     max-width: 500px;
     font-size: 16px;
     line-height: 1.6;
     color: #4a5568;
     margin-bottom: 32px;
-  }
-
-  /* ==========================================================
-     CTA BUTTON
-     ========================================================== */
-  .cta-wrapper {
-    margin-bottom: 24px;
   }
 
   .cta-button {
@@ -113,30 +57,21 @@
     border-radius: 8px;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-bottom: 32px;
   }
 
-  .cta-button:hover,
-  .cta-button:focus-visible {
+  .cta-button:hover {
     background-color: #2563eb;
     transform: scale(1.05);
-    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
   }
 
   .cta-button:focus-visible {
     outline: 3px solid #93c5fd;
-    outline-offset: 3px;
+    outline-offset: 2px;
   }
 
-  .cta-button:active {
-    transform: scale(0.98);
-  }
-
-  /* ==========================================================
-     SUB-CTA TEXT
-     ========================================================== */
-  .sub-cta {
+  .subtext {
     max-width: 500px;
     font-size: 16px;
     line-height: 1.6;
@@ -144,98 +79,46 @@
     margin-bottom: 32px;
   }
 
-  /* ==========================================================
-     FOOTER
-     ========================================================== */
-  footer.site-footer {
-    padding: 24px;
-    text-align: left;
-    font-size: 13px;
-    color: #94a3b8;
-  }
-
-  .site-footer a {
-    color: #4a5568;
-    text-decoration: none;
-  }
-
-  .site-footer a:hover,
-  .site-footer a:focus-visible {
-    text-decoration: underline;
-  }
-
-  /* ==========================================================
-     RESPONSIVE - MOBILE (breakpoint 768px)
-     ========================================================== */
-  @media (max-width: 768px) {
-    .headline {
-      font-size: 24px;
+  @media (max-width: 600px) {
+    body {
+      padding: 16px;
     }
 
     main {
-      padding: 32px 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .bio,
+    .subtext {
+      max-width: 100%;
     }
 
     .cta-button {
-      display: block;
       width: 100%;
       text-align: center;
-      font-size: 17px;
       padding: 16px 24px;
-    }
-
-    header.site-header {
-      padding: 20px 20px 0;
-    }
-
-    footer.site-footer {
-      padding: 20px;
     }
   }
 </style>
 </head>
 <body>
+  <main>
+    <h1>Ciao, sono Nicola di CSI - Business Intelligence &amp; Integration Consultant</h1>
 
-  <div class="page-wrapper">
+    <p class="bio">
+      Da oltre 35 anni affianco aziende nella progettazione e realizzazione di soluzioni IT ad alto valore aggiunto, trasformando esigenze di business complesse in architetture affidabili, scalabili e orientate ai risultati. Sono specializzato in Data Integration, Data Warehouse, Business Intelligence, Enterprise Performance Management e Project Management, con esperienza maturata in contesti enterprise dei settori manifatturiero, assicurativo, logistico e della distribuzione. Ho guidato progetti di integrazione dati, modernizzazione applicativa e supporto alle decisioni, collaborando con stakeholder tecnici e di business per garantire qualità, efficienza e continuità operativa. Credo in un approccio pragmatico, basato sull'ascolto, sulla competenza tecnica e sulla capacità di individuare soluzioni concrete che generino valore misurabile per l'organizzazione.
+    </p>
 
-    <header class="site-header">
-      <span class="logo">CSI</span>
-    </header>
+    <a class="cta-button" href="mailto:nicola.mongiello@csinetowrk.it">Prenota una consulenza gratuita</a>
 
-    <main>
-      <div class="content">
-
-        <h1 class="headline">
-          Ciao, sono Nicola di CSI - Business Intelligence &amp; Integration Consultant
-        </h1>
-
-        <p class="bio">
-          Da oltre 35 anni affianco aziende nella progettazione e realizzazione di soluzioni IT ad alto valore aggiunto, trasformando esigenze di business complesse in architetture affidabili, scalabili e orientate ai risultati. Sono specializzato in Data Integration, Data Warehouse, Business Intelligence, Enterprise Performance Management e Project Management, con esperienza maturata in contesti enterprise dei settori manifatturiero, assicurativo, logistico e della distribuzione. Ho guidato progetti di integrazione dati, modernizzazione applicativa e supporto alle decisioni, collaborando con stakeholder tecnici e di business per garantire qualità, efficienza e continuità operativa. Credo in un approccio pragmatico, basato sull'ascolto, sulla competenza tecnica e sulla capacità di individuare soluzioni concrete che generino valore misurabile per l'organizzazione.
-        </p>
-
-        <div class="cta-wrapper">
-          <a
-            href="mailto:nicola.mongiello@csinetowrk.it"
-            class="cta-button"
-            role="button"
-            aria-label="Prenota una consulenza gratuita via email"
-          >
-            Prenota una consulenza gratuita
-          </a>
-        </div>
-
-        <p class="sub-cta">
-          Hai un progetto di Data Integration, Business Intelligence o trasformazione digitale? Raccontami le tue esigenze: la prima consulenza è gratuita e senza impegno. Insieme valuteremo la soluzione più adatta ai tuoi obiettivi.
-        </p>
-
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 CSI &mdash; Nicola &middot; <a href="mailto:nicola.mongiello@csinetowrk.it">nicola.mongiello@csinetowrk.it</a></p>
-    </footer>
-
-  </div>
-
+    <p class="subtext">
+      Hai un progetto di Data Integration, Business Intelligence o trasformazione digitale? Raccontami le tue esigenze: la prima consulenza è gratuita e senza impegno. Insieme valuteremo la soluzione più adatta ai tuoi obiettivi.
+    </p>
+  </main>
 </body>
 </html>
