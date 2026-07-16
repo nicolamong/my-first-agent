@@ -70,4 +70,4 @@ my-first-agent/ ├── specs/ # 📋 Specifications (read-only for agent) ├
 ✅ Documented procedures in SAFETY.md
 
 ## Live Demo
-[Module 5 will add deployment link]
+(https://nicolamong.github.io/my-first-agent/)
